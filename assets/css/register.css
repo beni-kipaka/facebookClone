@@ -1,0 +1,156 @@
+.container-register{
+    width: 400px;
+    height: 620px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgb(0 0 0/10), 0 8px 16px rgb(0 0 0/10%);
+    border-radius: 5px;
+}
+
+.container-register .close{
+    position: absolute;
+    right: 5px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.container-register .register-title{
+    padding: 0 20px;
+}
+
+.container-register .register-title h2{
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+
+.container-register .register-title p{
+    color: #ccc;
+}
+
+.container-register .divider{
+    border: 1px solid #ccc;
+}
+
+
+/**************** REGISTER FORM *****************/
+.container-register .register-form{
+    padding: 10px; 
+}
+
+
+.container-register .register-form input{
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.container-register .register-form .form-group-input{
+    display: flex;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+.container-register .register-form .form-inline-input{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.container-register .register-form .form-inline-input input,
+.container-register .register-form .form-group-input input{
+    flex: 1;
+    font-size: 0.5;
+}
+
+.container-register .form-select-date{
+    display: flex;
+    gap: 5px;
+}
+
+.container-register .form-select-date select{
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.container-register .form-radio-items{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.container-register .form-radio-items .form-radio-item{
+    border: 1px solid #ccc;
+    flex: 1;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.container-register .form-radio-items .form-radio-item label{
+    position: relative;
+    bottom: 16px;
+}
+
+.container-register .form-register-infos{
+    font-size: 0.9em;
+    text-align: justify;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.container-register .form-register-button{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-register .form-register-button .bt-register-submit{
+    background-color: #00a400;
+    width: 200px;
+    height: 36px;
+    line-height: 5px;
+    color: #fff;
+}
+
+.container-register .form-inline-date p,
+.container-register .form-inline-genre p{
+    color: grey;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* MEDIAS QUERIES */
+@media screen and (max-width: 600px){
+    .container-register{
+        width: 360px;
+    }
+
+    .container-register .form-radio-items .form-radio-item label{
+        bottom: 15px;
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
