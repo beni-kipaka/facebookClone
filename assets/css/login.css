@@ -88,8 +88,8 @@
 
 @media screen and (min-width: 900px){
     .container-login{
-        height: 75vh;
-        padding: 100px 50px;
+        height: 55vh;
+        padding: 200px 50px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 350px 200px;
         grid-template-areas: "login-title login-form" "none login-footer";
@@ -97,6 +97,15 @@
 
     .login-title{
         text-align: left;
+        align-self: center;
+    }
+
+    .login-title h1{
+        margin: 0;
+    }
+
+    .login-form{
+        width: 400px;
     }
 }
 
