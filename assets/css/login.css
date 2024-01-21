@@ -1,120 +1,111 @@
-/* LOGIN PAGE */
+ /*************************LOGIN PAGE ***************/
+ 
+ .login-title {
+     grid-area: login-title;
+     padding: 0 20px;
+ }
+ 
+ .login-title h1 {
+     color: #1877f2;
+     font-size: 4rem;
+     margin: 15px 0;
+ }
+ 
+ .login-title p {
+     font-size: 1.5rem;
+ }
+ 
+ .login-form {
+     grid-area: login-form;
+     width: 340px;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 20%);
+     margin: 0 auto;
+     padding: 5px;
+ }
+ 
+ .login-form .form-row {
+     margin: 10px 0;
+ }
+ 
+ .login-form .form-button .bt-login-submit {
+     background-color: #1877f2;
+     color: white;
+     width: 95%;
+ }
+ 
+ .login-form .form-button .bt-login-create-account {
+     background-color: #42b72a;
+     color: white;
+     width: 70%;
+ }
+ 
+ .login-form .form-infos p a {
+     text-decoration: none;
+     color: #1877f2;
+ }
+ 
+ .login-form .divider {
+     border: 0.1px solid gray;
+     width: 90%;
+     margin: 20px auto;
+ }
+ 
+ .login-form .form-row input {
+     height: 50px;
+     font-size: 1.2rem;
+     width: 95%;
+     border-radius: 5px;
+     border: 1px solid#ccc;
+     outline: none;
+ }
+ 
+ .login-footer {
+     grid-area: login-footer;
+     width: 340px;
+     padding-top: 30px;
+     margin: 0 auto;
+ }
+ 
+ .login-footer a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+ }
+ 
+ .container-login {
+     display: grid;
+     height: 100vh;
+     text-align: center;
+     grid-template-columns: 1fr;
+     grid-template-rows: 200px 360px 1fr;
+     grid-template-areas: "login-title" "login-form" "login-footer";
+ }
+ 
+ @media screen and (min-width: 900px) {
+     .container-login {
+         height: 55vh;
+         padding: 200px 50px;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 350px 200px;
+         grid-template-areas: "login-title login-form" "none login-footer";
+     }
+     .login-title {
+         text-align: left;
+         align-self: center;
+     }
+     .login-form {
+         width: 400px;
+     }
+ }
 
-.login-title{
-    grid-area: login-title;
-    padding: 0 20px;
-}
+ 
+ 
+ @media screen and (min-width: 1450px) {
+     .container-login {
+         grid-template-columns: 600px 400px;
+         justify-content: center;
+     }
 
-.login-title h1{
-    color: #1877f2;
-    font-size: 3.5rem;
-    margin: 15px;
-}
-
-.login-title p{
-    font-size: 1.5rem;
-}
-
-.login-form{
-    grid-area: login-form;
-    width: 340px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 30%);
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.login-form .form-row{
-    margin: 5px 0;
-}
-
-.login-form .form-button .bt-login-submit{
-    background-color: #1877f2;
-    color: #fff;
-    width: 95%;
-}
-
-.login-form .form-button .bt-login-create-account{
-    background-color: #42b72a;
-    color: #fff;
-    width: 70%;
-
-}
-
-.login-form .form-infos p a{
-    text-decoration: none;
-    color: #1877f2;
-}
-
-.login-form .divider{
-    border: 0.1px solid #ccc;
-    width: 90%;
-    margin: 20px auto;
-}
-
-.login-form .form-row input{
-    height: 50px;
-    font-size: 1.2rem;
-    width: 95%;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-.login-footer{
-    grid-area: login-footer;
-    width: 340px;
-    margin: 0 auto;
-}
-
-.login-footer a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-top: 30px;
-}
-
-.container-login{
-    display: grid;
-    height: 100vh;
-    text-align: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 360px 1fr;
-    grid-template-areas: "login-title" "login-form" "login-footer";
-}
-
-
-
-/* MEDIAS QUERIES */
-
-@media screen and (min-width: 900px){
-    .container-login{
-        height: 55vh;
-        padding: 200px 50px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 350px 200px;
-        grid-template-areas: "login-title login-form" "none login-footer";
-    }
-
-    .login-title{
-        text-align: left;
-        align-self: center;
-    }
-
-    .login-title h1{
-        margin: 0;
-    }
-
-    .login-form{
-        width: 400px;
-    }
-}
-
-
-
-
-@media screen and (min-width: 1450px){
-    .container-login{
-        grid-template-columns: 600px 400px;
-        justify-content: center;
-    }
-}
+     
+ }

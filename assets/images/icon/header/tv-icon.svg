@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="page"
+   width="50"
+   color="#808080"
+   role="img"
+   viewBox="0 0 41.142857 50"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="tv-icon.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   height="50"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="3.1640625"
+     inkscape:cx="153.12593"
+     inkscape:cy="76.8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-6"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19"
+     width="100px"
+     inkscape:snap-grids="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-global="false" />
+  <path
+     fill="currentColor"
+     d="m 9.158392,50 c -0.8999998,0 -1.6304347,-0.746667 -1.6304347,-1.666668 0,-0.919998 0.7304349,-1.666665 1.6304347,-1.666665 h 22.826082 c 0.899999,0 1.630435,0.746667 1.630435,1.666665 C 33.614909,49.253333 32.884473,50 31.984474,50 Z M 27.44752,22.435555 16.343171,29.273333 c -1.008693,0.62 -2.293476,-0.120006 -2.293476,-1.324444 V 14.271111 c 0,-1.202223 1.284783,-1.944445 2.293476,-1.324444 l 11.104349,6.839999 c 0.976088,0.6 0.976088,2.046667 0,2.648889 z m 9.971736,16.453333 c 2.699999,0 4.891304,-2.239999 4.891304,-4.999998 V 8.3333338 c 0,-2.7600002 -2.191305,-5.0000005 -4.891304,-5.0000005 H 3.7236104 c -2.7000091,0 -4.8913122,2.2400003 -4.8913122,5.0000005 V 33.88889 c 0,2.759999 2.1913031,4.999998 4.8913122,4.999998 z m 0,3.333334 H 3.7236104 c -4.50218283,0 -8.1521819,-3.731111 -8.1521819,-8.333332 V 8.3333338 C -4.4285715,3.7311112 -0.77857243,0 3.7236104,0 H 37.419256 c 4.502172,0 8.152172,3.7311112 8.152172,8.3333338 V 33.88889 c 0,4.602221 -3.65,8.333332 -8.152172,8.333332 z"
+     id="path17"
+     style="stroke-width:2.19793" />
+</svg>

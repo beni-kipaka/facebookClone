@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="page"
+   width="50"
+   role="img"
+   viewBox="0 0 72 50"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="notification-icon.svg"
+   height="50"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs52" />
+  <sodipodi:namedview
+     id="namedview50"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="50px"
+     inkscape:zoom="1.625"
+     inkscape:cx="-9.5384615"
+     inkscape:cy="108.92308"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="-1926"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg48" />
+  <path
+     fill="currentColor"
+     d="m 16.204346,56.791766 c 4.427735,0 11.707453,-0.40319 21.552652,-2.199806 -1.702725,4.586693 -6.140226,7.873501 -11.352582,7.873501 -4.333321,0 -8.129453,-2.273994 -10.271695,-5.673695 z M 71.79847,31.76816 c 0.804155,4.102865 -2.099919,7.731578 -8.63734,10.7926 -3.581256,1.674046 -11.544669,4.860863 -24.697648,7.396124 -10.144722,1.951441 -17.577457,2.399789 -22.25588,2.399789 -1.390179,0 -2.539437,-0.03871 -3.444518,-0.09032 C 5.5484797,51.856717 1.4788697,49.566596 0.67471484,45.46373 -0.5461681,39.248147 1.3844548,36.848358 4.5847961,32.874514 L 5.4280192,31.826219 C 7.5865403,29.113554 8.4297634,26.449272 7.0493518,19.420857 3.959704,3.680305 11.115706,-7.0768144 26.677894,-10.089454 c 15.568697,-2.977158 26.273399,4.3318786 29.363047,20.0756565 1.377156,7.0284145 3.167784,9.1830645 6.195574,10.8958165 v 0.0032 l 1.178559,0.661232 c 4.466804,2.496555 7.162513,4.002874 8.383396,10.221683 z"
+     id="path46"
+     style="stroke-width:3.24057" />
+</svg>

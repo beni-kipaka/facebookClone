@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>(3) Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-login">
+            <div class="login-title">
+                <h1>facebook</h1>
+                <p>Avec Facebook, partagez et restez en contact avec votre entourage</p>
+
+            </div>
+            <div class="login-form">
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="Adresse e-mail ou numéro de tel.">
+                    </div>
+                    <div class="form-row">
+                        <input type="password" placeholder="Mot de passe">
+                    </div>
+                    <div class="form-button">
+                        <button class="bt-login-submit">Connexion</button>
+
+                    </div>
+                    <div class="form-infos">
+                        <p>
+                            <a href=""> Mot de passe oublié.</a>
+                        </p>
+
+                    </div>
+                    <div class="divider"></div>
+                    <div class="form-button">
+                        <button class="bt-login-create-account" id="create-account-button">Créer un compte</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login-footer">
+                <p>
+                    <a href="#">Créer une page</a> pour une célébrité, un groupe ou une entreprise.</p>
+            </div>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="container-register" id="register-popup">
+            <div class="close" id="close-register">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="register-title">
+                <h2>S'inscrire</h2>
+                <p>C'est rapide et facile</p>
+            </div>
+            <div class="divider"></div>
+            <div class="register-form">
+                <form>
+                    <div class="form-group-input">
+                        <input type="text" placeholder="Prénom">
+                        <input type="text" placeholder="Nom de famille">
+                    </div>
+                    <div class="form-inline-input">
+                        <input type="text" placeholder="Numéro de mobile ou e-mail">
+                    </div>
+                    <div class="form-inline-input">
+                        <input type="text" placeholder="Nouveau mot de passe">
+                    </div>
+                    <div class="form-inline-date">
+                        <p>Date de naissance <i class="fas fa-question-circle"></i></p>
+                        <div class="form-select-date">
+                            <select name="" id="" class="day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+
+                            <select name="" id="" class="month">
+                                <option value="Janvier">Janvier</option>
+                                <option value="Février">Février</option>
+                                <option value="Mars">Mars</option>
+                                <option value="Avril">Avril</option>
+                                <option value="Mai">Mai</option>
+                                <option value="Juin">Juin</option>
+                            </select>
+                            <select name="" id="" class="year">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-inline-genre">
+                        <p>Genre <i class="fas fa-question-circle"></i></p>
+                        <div class="form-radio-items">
+                            <div class="form-radio-item">
+                                <label for="femme">Femme</label>
+                                <input type="radio" name="genre" id="femme" />
+                            </div>
+                            <div class="form-radio-item">
+                                <label for="homme">Homme</label>
+                                <input type="radio" name="genre" id="homme" />
+                            </div>
+                            <div class="form-radio-item">
+                                <label for="autre">Personnalisé</label>
+                                <input type="radio" name="genre" id="autre" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-register-infos">
+                        En cliquant sur S’inscrire, vous acceptez nos Conditions générales. Découvrez comment nous recueillons, utilisons et partageons vos données en lisant notre Politique d’utilisation des données et comment nous utilisons les cookies et autres technologies
+                        similaires en consultant notre Politique d’utilisation des cookies. Vous recevrez peut-être des notifications par texto de notre part et vous pouvez à tout moment vous désabonner.
+
+                    </div>
+                    <div class="form-register-button">
+                        <button class="bt-register-submit">S'inscrire</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
