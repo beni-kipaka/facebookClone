@@ -1,0 +1,144 @@
+.messenger{
+    position: fixed;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    right: 23.5%;
+    height: 480px;
+    z-index: 6;
+    display: none;
+}
+.messenger .messenger-header{
+    display: flex;
+    align-items: center;
+}
+
+.messenger .close{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.messenger .receiver-status::before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+.messenger .status-online::before {
+    background-color: green;
+}
+.messenger .status-offline::before {
+    background-color: gray;
+}
+.messenger .receiver-fullname{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.messenger .message-header{
+    text-align: center;
+}
+.messenger .message-header img{
+    width: 100px;
+}
+.messenger .message-header p{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.messenger .messenger-body{
+    width: 400px;
+    height: 360px;
+    overflow-y: scroll;
+}
+.messenger .divider{
+    margin: 0;
+}
+
+
+.messenger .message-receive{
+    display: flex;
+    align-items: flex-end;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.messenger .message-send{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 70%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+
+.messenger .message-receive .message{
+  background-color: #1877f2;
+  color: white;
+  padding: 5px;
+    border-radius: 10px 10px 10px 0;
+    text-align: justify;
+}
+.messenger .message-send .message{
+  background-color: #efefef;
+  color: black;
+  padding: 5px;
+    border-radius: 10px 10px 0 10px;
+    text-align: justify;
+}
+.messenger .message-date{
+    color: gray;
+    text-align: center;
+}
+.messenger .message-image img{
+    width: 100%;
+}
+.messenger .message-video video{
+    width: 100%;
+}
+.messenger .messenger-footer{
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+}
+.messenger .messenger-footer i{
+    position: static;
+    font-size: 20px;
+    color: #1877f2;
+    top: 0;
+    cursor: pointer;
+}
+.messenger .messenger-footer .message-input{
+    flex: 1;
+    text-align: center;
+}
+.messenger .messenger-footer .message-input input{
+    width: 90%;
+    height: 30px;
+    background-color: #efefef;
+    border: 0.1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,6 +8,7 @@ header {
     background-color: white;
     width: 100vw;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    z-index: 99999;
 }
 
 #aside-left {
@@ -15,21 +16,21 @@ header {
 }
 
 #aside-right {
-    background-color: brown;
     grid-area: aside-right;
 }
 
 .content {
-    background-color: gold;
     grid-area: content;
+    padding-top: 20px;
 }
 
 .container-home {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 350px 650px 300px;
     grid-template-areas: "aside-left content aside-right";
     padding-top: 65px;
+    justify-content: space-between;
 }
 
 
@@ -156,61 +157,444 @@ header #header-right .header-icon .notification {
 }
 
 
+/*********************** ASIDE LEFT *******************************/
 
-/* ------------------------ ASIDE 1 ------------------------- */
-#aside-left{
+#aside-left {
     padding: 20px;
 }
 
-#aside-left .navigation-item{
+#aside-left .navigation-items {
+    position: fixed;
+    height: 95vh;
+    overflow: hidden;
+    right: left;
+    padding-right: 20px;
+    width: max-content;
+}
+
+#aside-left .navigation-item {
     display: flex;
     align-items: center;
     padding-left: 20px;
     cursor: pointer;
 }
 
-#aside-left .navigation-item:nth-child(1) img{
+#aside-left .navigation-item:nth-child(1) img {
     border-radius: 50px;
 }
 
-#aside-left .navigation-item .navigation-description{
+#aside-left .navigation-item .navigation-description {
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
-#aside-left .navigation-item:hover{
+#aside-left .navigation-item:hover {
     background-color: #efefef;
     border-radius: 5px;
 }
 
+#aside-left a {
+    text-decoration: none;
+    color: black;
+}
 
 
+/*********************** ASIDE RIGHT *******************************/
+
+#aside-right {
+    padding-bottom: 20px;
+}
+
+#aside-right .users-items {
+    position: fixed;
+    height: 95vh;
+    overflow-y: auto;
+    right: 0;
+    padding-right: 30px;
+}
+
+#aside-right .users-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+}
+
+#aside-right .users-item img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+#aside-right .users-item .username {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#aside-right .users-item:hover {
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+#aside-right .users-item .status {
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 48px;
+    border: 1px solid white;
+}
+
+.online {
+    background-color: green;
+}
+
+.offline {
+    background-color: gray;
+}
 
 
+/********  Carousel ********/
+
+.stories-item {
+    width: 160px;
+    position: relative;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.owl-stage {
+    height: 380px;
+    padding: 10px;
+}
+
+.stories-item img {
+    width: 150px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.story-message {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 140px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.fa-plus-circle {
+    position: absolute;
+    bottom: 55px;
+    left: 65px;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: #1877f2;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.story-username {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 160px;
+    height: 35px;
+    border-radius: 0 0 10px 10px;
+}
 
 
+/*********************** CREATE POST *******************************/
+
+.create-post {
+    border-radius: 10px;
+}
+
+.create-post .user-news {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.create-post .user-news img {
+    border-radius: 50px;
+}
+
+.create-post .bt-add-post {
+    flex: 1;
+    background-color: #efefef;
+    margin: 0 20px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    color: gray;
+    padding-left: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.create-post .divider {
+    border: 0.1px solid#ccc;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.create-post .action-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.create-post .action-icon {
+    padding-right: 10px;
+}
+
+.create-post .action-item {
+    display: flex;
+    align-items: center;
+}
 
 
+/*********************** POSTS *******************************/
+
+.posts-item {
+    margin: 20px 0;
+}
+
+.posts-items .post-owner {
+    display: flex;
+    align-items: center;
+}
+
+.posts-items .post-owner .owner-username {
+    font-weight: bold;
+}
+
+.posts-item .post-content {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.posts-item .post-illustration-details {
+    padding: 10px;
+}
+
+.posts-item .post-illustration-image img {
+    width: 100%;
+    height: 400px;
+}
+
+.posts-item .post-url {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.posts-item .like-and-comment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.posts-item .like-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.posts-item .post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    cursor: pointer;
+}
 
 
+/*********************** COMMENTS *******************************/
+
+.posts-item .user-comment-box {
+    display: flex;
+    align-items: center;
+}
+
+.posts-item .user-comment-box .comment-input {
+    flex: 1;
+}
+
+.posts-item .user-comment-box input {
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+    color: black;
+    padding-left: 20px;
+    font-weight: 100;
+}
+
+.comments-items {
+    padding: 10px;
+}
+
+.comments-item {
+    margin: 20px 0;
+}
+
+.posts-item .comments-item {
+    display: flex;
+}
+
+.posts-item .comments-item .comment-owner {
+    display: flex;
+    align-self: flex-start;
+}
+
+.comments-item .comment-content {
+    text-align: justify;
+    background-color: #efefef;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.comments-item .comment-owner-fullname {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.comments-item .comment-content-details {
+    margin-bottom: 10px;
+}
+
+.comments-item .comments-actions span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comments-item .comments-actions span:hover {
+    text-decoration: underline;
+}
 
 
+/*********************** MODAL *******************************/
 
+.modal-post {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px rgb(0 0 0/10%), 0 8px 16px rgb(0 0 0/33%);
+    border-radius: 5px;
+    background-color: white;
+    z-index: 2;
+    display: none;
+}
 
+.modal-header .modal-title h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
 
+.close-modal {
+    position: relative;
+    cursor: pointer;
+}
 
+.modal-header .fa-times {
+    position: absolute;
+    right: 5px;
+    font-size: 1.5rem;
+    background-color: #ccc;
+    border-radius: 50px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
 
+.modal-post .divider {
+    border: 0.1px solid#ccc;
+    margin: 10px 0;
+}
 
+.modal-body,
+.modal-footer {
+    padding: 10px;
+}
 
+.modal-body .user-new-modal {
+    display: flex;
+    align-items: center;
+}
 
+.modal-body .user-new-modal .profile-picture {
+    padding: 10px;
+}
+
+.modal-body .post-content textarea {
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 1.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.modal-footer .modal-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-infos {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-infos-icons {
+    display: flex;
+    gap: 5px;
+}
+
+.modal-infos-icon i {
+    flex: 1;
+}
+
+.modal-infos .modal-infos-title {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.bt-modal-submit {
+    background-color: #1877f2;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+}
 
 
 /*********************** RESPONSIVE *******************************/
 
 @media screen and (min-width:900px) and (max-width: 1300px) {
     .container-home {
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 600px 300px;
         grid-template-areas: "content aside-right";
+        justify-content: center;
     }
     #aside-left {
         display: none;
@@ -242,8 +626,9 @@ header #header-right .header-icon .notification {
 
 @media screen and (min-width:600px) and (max-width: 900px) {
     .container-home {
-        grid-template-columns: 1fr;
+        grid-template-columns: 90%;
         grid-template-areas: "content";
+        justify-content: center;
     }
     #aside-left,
     #aside-right {
@@ -283,8 +668,9 @@ header #header-right .header-icon .notification {
 
 @media screen and (max-width: 600px) {
     .container-home {
-        grid-template-columns: 1fr;
+        grid-template-columns: 95%;
         grid-template-areas: "content";
+        justify-content: center;
     }
     #aside-left,
     #aside-right {
@@ -322,5 +708,15 @@ header #header-right .header-icon .notification {
     }
     #header-right {
         padding-right: 20px;
+    }
+    .create-post .bt-add-post {
+        font-size: 0.9rem;
+    }
+    .create-post .action-description {
+        font-size: 0.7rem;
+    }
+    .modal-post {
+        width: 90vw;
+        margin-top: 40px;
     }
 }
